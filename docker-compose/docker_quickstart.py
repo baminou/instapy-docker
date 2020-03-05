@@ -17,5 +17,5 @@ with smart_run(bot):
                                 max_following=5555,
                                 min_followers=45,
                                 min_following=77)
-    bot.like_by_tags(amount=50, use_smart_hashtags=True)
+    bot.like_by_tags(tags, amount=50)
     bot.end()
