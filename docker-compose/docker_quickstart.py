@@ -9,7 +9,7 @@ tags = os.environ.get('TAGS').split(',')
 
 bot = InstaPy(username=insta_username, password=insta_password, headless_browser=True)
 with smart_run(bot):
-    bot.set_smart_hashtags(tags, limit=3, sort='top', log_tags=True)
+    #bot.set_smart_hashtags(tags, limit=3, sort='top', log_tags=True)
     bot.set_relationship_bounds(enabled=True,
                                 potency_ratio=-1.21,
                                 delimit_by_numbers=True,
