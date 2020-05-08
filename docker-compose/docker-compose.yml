@@ -1,7 +1,7 @@
 version: '3'
 services:
   web:
-    image: instapy/instapy:latest
+    image: instapy/instapy:0.6.8
     container_name: "${COMPOSE_PROJECT_NAME}_web"
     env_file: .env
     environment:

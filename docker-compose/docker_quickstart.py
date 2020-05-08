@@ -18,4 +18,6 @@ with smart_run(bot):
                                 min_followers=45,
                                 min_following=77)
     bot.like_by_tags(tags, amount=50)
+    bot.set_user_interact(amount=3, randomize=True, percentage=100, media='Photo')
+    bot.like_by_tags(tags, amount=int(os.environ.get('HOURLY_LIKES')))
     bot.end()
